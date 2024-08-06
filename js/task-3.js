@@ -1,23 +1,39 @@
+// const profile = {
+//     username: "Jacob",
+//     playTime: 300,
+
+//     function changeUsername(newName) {
+//         this.username = newName;
+// },
+
+// function updatePlayTime(hours) {
+//     this.playTime += hours;
+    
+// },
+//  getInfo() {
+//     return `${this.username} has ${this.playTime} active hours!`;
+//     }
+// };
+
 const profile = {
-    username: "Jacob",
-    playTime: 300,
+  username: "Jacob",
+  playTime: 300,
+
+  
+   changeUsername(newName) {
+    this.username = newName;
+  },
+
+  
+  updatePlayTime(hours) {
+    this.playTime += hours;
+  },
+
+  
+  getInfo() {
+    return `${this.username} has ${this.playTime} active hours!`;
+  }
 };
-function changeUsername(newName) {
-this.username = newName
-}
-
-function updatePlayTime(hours) {
-        this.playTime += hours
-    
-}
-function getInfo() {
-    return `${sername} has ${amount} active hours!`
-    }
-    
-console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist"]
-
-// 
-
 
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
